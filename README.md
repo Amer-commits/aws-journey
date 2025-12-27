@@ -1,12 +1,39 @@
 # aws-journey
-## day 1
--AWS account created 
--IAM admin user created
--developers group created
--EC2 and S3 read-only permissions attached
+## WEEK 1
+### 1.AWS account & IAM setup
+--created AWS account
+--configured IAM users and groups
+--avoided root user for daily operations 
+-- understood iam roles vs users
 
-## day 2
--Launched Ec2 instance(t3.micro,free tier)
--Configured security group(SSH via my IP)
--Created key pair
--Region: ap-south-1 (mumbai)
+### 2. compute basics (EC2)
+-- launched EC2 instance ( free tier eligible)
+--selected AMI,instance type,key pair and security group
+--understood :
+public vs private
+security groups
+keypairs
+learned basic ec2 lifecycle (start,stop,terminate)
+
+### 3. AWS SKILL BUILDER - CLOUD ESSENTIALS
+enrolled in : getting started with AWS cloud essentials
+-learned :
+aws global infrastructure
+core services categories( compute ,storage,networking)
+shared responsibility model
+pricing and free tier
+
+### 4. console exploration
+--explored aws management console
+-navigated core services :
+IAM
+EC2
+S3
+LAMBDA
+
+### 5. SERVERLESS INTRODUCTION ( AWS LAMBDA)
+-- learned basics of aws lambda
+-understood :
+event driven execution
+no server management
+use cases vs ec2
