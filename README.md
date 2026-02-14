@@ -1,49 +1,68 @@
-# AWS Cloud Learning Journey 🚀
+🌩️ Cloud Foundations – ##AWS & Linux Infrastructure
 
-This repository documents my hands-on learning journey in AWS Cloud,
-with a focus on core infrastructure, IAM security, and serverless concepts.
+📌 Overview
 
----
+This repository documents my foundational learning in Cloud Computing and Linux server administration.
 
-## week 1: AWS Foundations
+ #Focus areas in this section:
+● Cloud service models (IaaS, PaaS, SaaS)
+●Virtual server deployment
+●SSH-based remote access
 
-### AWS Account & Identity Management (IAM)
-- Set up AWS account following security best practices
-- Created IAM users and groups
-- Implemented least-privilege access policies
-- Avoided root account usage for daily operations
-- Understood IAM users vs roles vs policies
 
-### Compute Fundamentals (EC2)
-- Launched Free Tier EC2 instance
-- Configured:
-  - AMI selection
-  - Instance type
-  - Key pairs
-  - Security groups
-- Learned EC2 networking basics:
-  - Public vs private IP
-  - Inbound vs outbound rules
-- Practiced EC2 lifecycle management (start, stop, terminate)
+Goal to Build strong infrastructure fundamentals before  I move deeper into AWS services.
+##☁️Cloud Fundamentals
+#Cloud computing concepts and benefits
+Service models:
+IaaS
+PaaS
+SaaS
+Understanding abstraction of compute, storage, and networking
 
-### AWS Core Concepts
-- AWS Global Infrastructure (Regions, AZs)
-- Core service categories:
-  - Compute
-  - Storage
-  - Networking
-- Shared Responsibility Model
-- AWS pricing & Free Tier limitations
+##🖥️ Virtual Server Deployment
+- Deployed a Linux virtual machine and accessed it remotely.
+Tasks Performed:
+- Created cloud account
+- Deployed Linux instance
+- Enabled Two-Factor Authentication
+- Connected via SSH using PuTTY
+- 🔐 SSH & Server Security (PuTTY – Windows)
+- Connected to the remote server using PuTTY (SSH).
+##Commands Executed :
 
-### AWS Console & Core Services
-- Navigated AWS Management Console
-- Explored:
-  - IAM
-  - EC2
-  - S3
-  - Lambda
+Bash
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+cd /root
+ls -la
+nano ~/.ssh/authorized_keys
 
-### Serverless Basics (AWS Lambda)
-- Understood event-driven architecture
-- Compared Lambda vs EC2 use cases
-- Learned benefits of serverless (scalability, cost efficiency, no server management)
+what i did in above commands:
+- Security Configuration Created 
+- .ssh directory
+- Configured correct file permissions
+- Added SSH public key
+- Read and write permissions edited
+- Secured root access
+Key Learning: 
+Understanding Linux file permissions (700 vs 600) was critical in making SSH key authentication work properly.
+| Linode Concept      | AWS Equivalent                |
+|---------------------|------------------------------|
+| Linode VM           | Amazon EC2                  |
+| Linode Firewall     | EC2 Security Group          |
+| Linode TFA          | AWS MFA                     |
+| SSH Access          | EC2 SSH / Instance Connect  |
+| Instance Dashboard  | EC2 Instance Details        |
+
+This helped me understand that cloud fundamentals are always same even across providers.
+##NEXT STEPS
+🐧 Linux Foundations:
+- Linux filesystem structure
+- Directory navigation
+- Maintenance commands
+- User account management
+- Creating non-root users
+- Securing user accounts
+- Disabling root login
