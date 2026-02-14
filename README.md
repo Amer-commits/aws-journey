@@ -5,9 +5,9 @@
 This repository documents my foundational learning in Cloud Computing and Linux server administration.
 
  #Focus areas in this section:
-● Cloud service models (IaaS, PaaS, SaaS)
-●Virtual server deployment
-●SSH-based remote access
+- Cloud service models (IaaS, PaaS, SaaS)
+- Virtual server deployment
+- SSH-based remote access
 
 
 Goal to Build strong infrastructure fundamentals before  I move deeper into AWS services.
